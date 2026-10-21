@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Steven Yang</title>
+  <desc id="desc">Systems research and developer tools. Floating isometric storage layers with fine circuit traces and a brief pulse of data.</desc>
+  <defs>
+    <radialGradient id="pool">
+      <stop stop-color="#62D8E4" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#62D8E4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".8" fill="#223957"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="320" rx="22"/></clipPath>
+  </defs>
+  <style>
+    .packet { stroke-dasharray: 5 95; opacity: 0; animation: travel 5s ease-in-out 1 both; }
+    @keyframes travel {
+      0% { stroke-dashoffset: 8; opacity: 0; }
+      12% { opacity: .8; }
+      84% { opacity: .7; }
+      100% { stroke-dashoffset: -100; opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { .packet { animation: none; opacity: 0; } }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="#091426"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <g transform="translate(350 -5) scale(.65)">
+      <ellipse cx="920" cy="240" rx="250" ry="210" fill="url(#pool)"/>
+      <path d="M 680 354 920 458 1160 354 920 250 Z M 800 302 1040 406 M 800 406 1040 302" fill="none" stroke="#223957" stroke-dasharray="3 7"/>
+      <path d="M 770 300 v 10 l 150 65 150 -65 v -10 l -150 65 Z" fill="#62D8E4" fill-opacity=".06" stroke="#62D8E4" stroke-opacity=".45"/><path d="M 920 235 1070 300 920 365 770 300 Z" fill="#091426" fill-opacity=".94" stroke="#62D8E4" stroke-width="1.6"/><path d="M 797 300 920 353 1043 300" fill="none" stroke="#62D8E4" stroke-opacity=".25"/><path d="M 819 328.0 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 837 335.8 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 855 343.6 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 873 351.4 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 891 359.2 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 909 367.0 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 770 269 v 10 l 150 65 150 -65 v -10 l -150 65 Z" fill="#62D8E4" fill-opacity=".06" stroke="#62D8E4" stroke-opacity=".45"/><path d="M 920 204 1070 269 920 334 770 269 Z" fill="#091426" fill-opacity=".94" stroke="#62D8E4" stroke-width="1.6"/><path d="M 797 269 920 322 1043 269" fill="none" stroke="#62D8E4" stroke-opacity=".25"/><path d="M 819 297.0 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 837 304.8 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 855 312.6 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 873 320.4 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 891 328.2 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 909 336.0 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 770 238 v 10 l 150 65 150 -65 v -10 l -150 65 Z" fill="#62D8E4" fill-opacity=".06" stroke="#62D8E4" stroke-opacity=".45"/><path d="M 920 173 1070 238 920 303 770 238 Z" fill="#091426" fill-opacity=".94" stroke="#62D8E4" stroke-width="1.6"/><path d="M 797 238 920 291 1043 238" fill="none" stroke="#62D8E4" stroke-opacity=".25"/><path d="M 819 266.0 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 837 273.8 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 855 281.6 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 873 289.4 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 891 297.2 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 909 305.0 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 770 207 v 10 l 150 65 150 -65 v -10 l -150 65 Z" fill="#62D8E4" fill-opacity=".06" stroke="#62D8E4" stroke-opacity=".45"/><path d="M 920 142 1070 207 920 272 770 207 Z" fill="#091426" fill-opacity=".94" stroke="#62D8E4" stroke-width="1.6"/><path d="M 797 207 920 260 1043 207" fill="none" stroke="#62D8E4" stroke-opacity=".25"/><path d="M 819 235.0 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 837 242.8 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 855 250.6 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 873 258.4 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 891 266.2 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 909 274.0 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 770 176 v 10 l 150 65 150 -65 v -10 l -150 65 Z" fill="#62D8E4" fill-opacity=".06" stroke="#62D8E4" stroke-opacity=".45"/><path d="M 920 111 1070 176 920 241 770 176 Z" fill="#091426" fill-opacity=".94" stroke="#62D8E4" stroke-width="1.6"/><path d="M 797 176 920 229 1043 176" fill="none" stroke="#62D8E4" stroke-opacity=".25"/><path d="M 819 204.0 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 837 211.8 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 855 219.6 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 873 227.4 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 891 235.2 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 909 243.0 v 4" stroke="#62D8E4" stroke-width="2"/><path d="M 770 145 v 10 l 150 65 150 -65 v -10 l -150 65 Z" fill="#FFAD87" fill-opacity=".06" stroke="#FFAD87" stroke-opacity=".45"/><path d="M 920 80 1070 145 920 210 770 145 Z" fill="#091426" fill-opacity=".94" stroke="#FFAD87" stroke-width="1.6"/><path d="M 797 145 920 198 1043 145" fill="none" stroke="#FFAD87" stroke-opacity=".25"/><path d="M 819 173.0 v 4" stroke="#FFAD87" stroke-width="2"/><path d="M 837 180.8 v 4" stroke="#FFAD87" stroke-width="2"/><path d="M 855 188.6 v 4" stroke="#FFAD87" stroke-width="2"/><path d="M 873 196.4 v 4" stroke="#FFAD87" stroke-width="2"/><path d="M 891 204.2 v 4" stroke="#FFAD87" stroke-width="2"/><path d="M 909 212.0 v 4" stroke="#FFAD87" stroke-width="2"/><path d="M 863 145 920 120 977 145 920 170 Z" fill="#FFAD87" fill-opacity=".09" stroke="#FFAD87"/><path d="M 896 130.56 l 32 14 -32 14 -32 -14 Z" fill="none" stroke="#FFAD87" stroke-opacity=".3"/><path d="M 920 120.0 l 32 14 -32 14 -32 -14 Z" fill="none" stroke="#FFAD87" stroke-opacity=".3"/><path d="M 944 130.56 l 32 14 -32 14 -32 -14 Z" fill="none" stroke="#FFAD87" stroke-opacity=".3"/><path d="M 650 335 710 361 770 335 830 361" fill="none" stroke="#62D8E4" stroke-opacity=".4" stroke-width="1.5"/><path d="M 684 389 744 415 830 378 870 395" fill="none" stroke="#62D8E4" stroke-opacity=".4" stroke-width="1.5"/><path d="M 1040 308 1100 282 1134 297" fill="none" stroke="#62D8E4" stroke-opacity=".4" stroke-width="1.5"/>
+      <path class="packet" pathLength="100" d="M 650 335 710 361 770 335 830 361" fill="none" stroke="#62D8E4" stroke-width="3"/><path class="packet" pathLength="100" d="M 684 389 744 415 830 378 870 395" fill="none" stroke="#62D8E4" stroke-width="3"/><path class="packet" pathLength="100" d="M 1040 308 1100 282 1134 297" fill="none" stroke="#62D8E4" stroke-width="3"/>
+      <circle cx="650" cy="335" r="3" fill="#62D8E4"/>
+      <circle cx="1134" cy="297" r="3" fill="#62D8E4"/>
+    </g>
+    <g font-family="'Trebuchet MS', 'Segoe UI', sans-serif">
+      <text x="58" y="42" fill="#9FB4CE" font-size="16" font-family="'Cascadia Code', Consolas, monospace">/steventimes</text>
+      <text x="56" y="113" fill="#EAF3FF" font-weight="600" font-size="60" letter-spacing="-1.5">Steven Yang</text>
+      <text x="58" y="166" fill="#EAF3FF" font-size="22">Systems research &amp; developer tools</text>
+      <text x="58" y="199" fill="#9FB4CE" font-size="18">Adaptive storage, data pipelines &amp; AI workflows.</text>
+      <path d="M 58 258 h 28" stroke="#62D8E4" stroke-width="2" stroke-linecap="round"/>
+      <text x="58" y="285" fill="#9FB4CE" font-size="16">Brandeis University</text>
+    </g>
+    <rect x=".5" y=".5" width="1199" height="319" rx="21.5" fill="none" stroke="#223957"/>
+  </g>
+</svg>

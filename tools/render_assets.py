@@ -96,17 +96,61 @@ def hero(theme: str, compact: bool) -> str:
 '''
 
 
+def pipelines(theme: str, compact: bool) -> str:
+    base, ink, muted, signal, copper, grid = PALETTES[theme]
+    width, height = (640, 280) if compact else (1200, 230)
+    font = "'Trebuchet MS', 'Segoe UI', sans-serif"
+    mono = "'Cascadia Code', Consolas, monospace"
+    if compact:
+        content = f'''
+    <text x="32" y="48" fill="{muted}" font-size="22">PYTHON DATA PIPELINES</text>
+    <path d="M 32 85 v 118 h 16" fill="none" stroke="{signal}" stroke-width="3"/>
+    <text x="56" y="111" fill="{ink}" font-size="30" font-family="{mono}">flow(records)</text>
+    <text x="56" y="156" fill="{signal}" font-size="26" font-family="{mono}">.filter(...).map(...)</text>
+    <text x="56" y="201" fill="{copper}" font-size="30" font-family="{mono}">.collect(...)</text>
+    <text x="32" y="252" fill="{muted}" font-size="23">Read records. Transform. Collect.</text>'''
+    else:
+        nodes = [
+            (32, "flow(records)", "Read records", ink),
+            (420, ".filter(...).map(...)", "Filter and transform", signal),
+            (808, ".collect(...)", "Collect results", copper),
+        ]
+        content = f'<text x="32" y="43" fill="{muted}" font-size="18">PYTHON DATA PIPELINES</text>'
+        for x, code, label, color in nodes:
+            content += f'''
+    <rect x="{x}" y="71" width="360" height="83" rx="10" fill="{base}" stroke="{grid}"/>
+    <text x="{x + 20}" y="122" fill="{color}" font-size="24" font-family="{mono}">{code}</text>
+    <text x="{x + 20}" y="194" fill="{muted}" font-size="20">{label}</text>'''
+        for x in (398, 786):
+            content += f'<path d="M {x} 112 h 16 m -6 -6 6 6 -6 6" fill="none" stroke="{signal}" stroke-width="2"/>'
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
+  <title id="title">fpstreams: lazy Python pipelines</title>
+  <desc id="desc">Illustrative pipeline: read records with flow, filter and map them, then collect results. The ellipses stand for user-defined operations.</desc>
+  <rect x=".5" y=".5" width="{width - 1}" height="{height - 1}" rx="14" fill="{base}" stroke="{grid}"/>
+  <g font-family="{font}">{content}
+  </g>
+</svg>
+'''
+
+
 def main() -> None:
     ASSETS.mkdir(exist_ok=True)
     for theme in PALETTES:
         for compact in (False, True):
-            svg = hero(theme, compact)
-            root = ElementTree.fromstring(svg)
-            assert root.attrib["viewBox"] == ("0 0 640 320" if compact else "0 0 1200 320")
-            assert "<script" not in svg and "<foreignObject" not in svg
-            assert "prefers-reduced-motion" in svg and "infinite" not in svg
             suffix = "-compact" if compact else ""
-            (ASSETS / f"hero-{theme}{suffix}.svg").write_text(svg, encoding="utf-8")
+            for name, render in (("hero", hero), ("pipelines", pipelines)):
+                svg = render(theme, compact)
+                root = ElementTree.fromstring(svg)
+                width = 640 if compact else 1200
+                height = 320 if name == "hero" else (280 if compact else 230)
+                assert root.attrib["width"] == str(width)
+                assert root.attrib["height"] == str(height)
+                assert root.attrib["viewBox"] == f"0 0 {width} {height}"
+                assert "<script" not in svg and "<foreignObject" not in svg
+                assert "infinite" not in svg
+                if name == "hero":
+                    assert "prefers-reduced-motion" in svg
+                (ASSETS / f"{name}-{theme}{suffix}.svg").write_text(svg, encoding="utf-8")
 
 
 if __name__ == "__main__":

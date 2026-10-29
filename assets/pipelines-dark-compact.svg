@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="280" viewBox="0 0 640 280" role="img" aria-labelledby="title desc">
+  <title id="title">fpstreams: lazy Python pipelines</title>
+  <desc id="desc">Illustrative pipeline: read records with flow, filter and map them, then collect results. The ellipses stand for user-defined operations.</desc>
+  <rect x=".5" y=".5" width="639" height="279" rx="14" fill="#091426" stroke="#223957"/>
+  <g font-family="'Trebuchet MS', 'Segoe UI', sans-serif">
+    <text x="32" y="48" fill="#9FB4CE" font-size="22">PYTHON DATA PIPELINES</text>
+    <path d="M 32 85 v 118 h 16" fill="none" stroke="#62D8E4" stroke-width="3"/>
+    <text x="56" y="111" fill="#EAF3FF" font-size="30" font-family="'Cascadia Code', Consolas, monospace">flow(records)</text>
+    <text x="56" y="156" fill="#62D8E4" font-size="26" font-family="'Cascadia Code', Consolas, monospace">.filter(...).map(...)</text>
+    <text x="56" y="201" fill="#FFAD87" font-size="30" font-family="'Cascadia Code', Consolas, monospace">.collect(...)</text>
+    <text x="32" y="252" fill="#9FB4CE" font-size="23">Read records. Transform. Collect.</text>
+  </g>
+</svg>

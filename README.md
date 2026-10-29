@@ -1,3 +1,4 @@
+<p>
 <a href="https://steventimes.github.io/">
   <picture>
     <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/hero-dark-compact.svg">
@@ -6,49 +7,69 @@
     <img src="assets/hero-light.svg" width="100%" alt="Steven Yang. Systems research and developer tools. Visit my website.">
   </picture>
 </a>
+</p>
 
 I'm **Hongchen (Steven) Yang**, a computer science student at **Brandeis University**.
-I study adaptive storage systems and build AI agent workflows.
+My work spans adaptive storage systems and developer tools for Python data
+processing, notebook editing, and AI agent workflows.
 
 [Website](https://steventimes.github.io/) · [Research](https://steventimes.github.io/#research) · [LinkedIn](https://www.linkedin.com/in/hongchen-yang-3803b4294/) · [Gmail](mailto:stevenyang0316@gmail.com)
 
-## Projects
+## Selected work
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/steventimes/fpstreams">fpstreams</a></h3>
-      <p>Lazy pipelines for Python iterables and records, with bounded async concurrency and native execution paths.</p>
-      <p><code>Python</code> <code>Rust</code></p>
-      <p><a href="https://steventimes.github.io/fpstreams/">Documentation</a> · <a href="https://steventimes.github.io/fpstreams/playground/">Playground</a></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/steventimes/git-for-jupyterNotebook">Notebook Git Marks</a></h3>
-      <p>See Git changes on individual lines inside VS Code's native notebook editor, including edits you haven't saved yet.</p>
-      <p><code>TypeScript</code> <code>VS Code</code></p>
-      <p><a href="https://marketplace.visualstudio.com/items?itemName=StevenYang0316-5274.notebook-git-gutter">VS Code Marketplace</a></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/steventimes/dependency-checker">Dependency Checker</a></h3>
-      <p>Dependency audits grounded in declarations, lockfiles, and source usage. Shared by a CLI, MCP server, and agent skill.</p>
-      <p><code>Python</code> <code>MCP</code></p>
-      <p><a href="https://github.com/steventimes/dependency-checker#use-with-a-coding-agent">Agent setup</a></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/steventimes/soccer-analytics">Soccer Analytics</a></h3>
-      <p>Football data, match analysis, and model comparisons that keep training and evaluation periods separate.</p>
-      <p><code>Python</code> <code>Machine learning</code></p>
-      <p><a href="https://github.com/steventimes/soccer-analytics/blob/main/results/README.md">Research results</a></p>
-    </td>
-  </tr>
-</table>
+### [fpstreams](https://github.com/steventimes/fpstreams)
 
-## Under the hood
+<p>
+<a href="https://steventimes.github.io/fpstreams/playground/">
+  <picture>
+    <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/pipelines-dark-compact.svg">
+    <source media="(prefers-color-scheme: light) and (max-width: 600px)" srcset="assets/pipelines-light-compact.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/pipelines-dark.svg">
+    <img src="assets/pipelines-light.svg" width="100%" alt="fpstreams pipeline illustration: read records, filter and transform, then collect results. Try the browser playground.">
+  </picture>
+</a>
+</p>
+
+**Build lazy data pipelines in Python.** Filter and transform iterables and
+records, limit concurrent async work, and aggregate key/value data. Supported
+operations can use native execution paths.
+
+[![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/steventimes/badge.svg)](https://hub.xerj.org/contributors/steventimes)
+
+Selected source snapshots are available in the
+[XERJ Corpus Hub](https://hub.xerj.org/corpus/steventimes--fpstreams)
+as searchable reference material for AI coding agents.
+
+**Python · Rust** · [Try the playground](https://steventimes.github.io/fpstreams/playground/) · [Read the docs](https://steventimes.github.io/fpstreams/) · [Install from PyPI](https://pypi.org/project/fpstreams/)
+
+### [Jupyter Notebook Git Marks](https://github.com/steventimes/git-for-jupyterNotebook)
+
+**See what changed without leaving your notebook.** Git marks inside
+VS Code's native notebook editor identify added, modified, and deleted lines,
+including edits you haven't saved yet.
+
+**TypeScript · VS Code** · [Get the extension](https://marketplace.visualstudio.com/items?itemName=StevenYang0316-5274.notebook-git-gutter) · [View source](https://github.com/steventimes/git-for-jupyterNotebook)
+
+### [Dependency Checker](https://github.com/steventimes/dependency-checker)
+
+**Trace dependencies from declarations to source usage.** Inspect declared
+packages, locked versions, and usage evidence through a CLI, MCP server, or agent
+skill. Scans parse repository files without running the target project's code.
+
+**Python · MCP** · [Set up for a coding agent](https://github.com/steventimes/dependency-checker#use-with-a-coding-agent) · [View source](https://github.com/steventimes/dependency-checker)
+
+### [Soccer Analytics](https://github.com/steventimes/soccer-analytics)
+
+**Explore football data and compare models on held-out data.** Research covers
+matches, teams, and players, with reproducible examples that keep training and
+evaluation periods separate.
+
+**Python · Machine learning** · [Explore research results](https://github.com/steventimes/soccer-analytics/blob/main/results/README.md) · [Reproduce examples](https://github.com/steventimes/soccer-analytics/blob/main/REPRODUCING.md)
+
+## Storage systems research
 
 My research focuses on **FluidLSM and RocksDB tuning for changing workloads**.
-I study how access patterns affect compaction and performance in LSM trees.
-I build controlled benchmarks to evaluate adaptive tuning methods.
+I use controlled benchmarks to study how access patterns affect compaction and
+performance in LSM trees, and to evaluate adaptive tuning methods.
 
-[More about my work](https://steventimes.github.io/) · [All repositories](https://github.com/steventimes?tab=repositories)
+[Explore my research](https://steventimes.github.io/#research) · [All repositories](https://github.com/steventimes?tab=repositories) · [Get in touch](mailto:stevenyang0316@gmail.com)

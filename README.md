@@ -36,9 +36,9 @@ operations can use native execution paths.
 
 [![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/steventimes/badge.svg)](https://hub.xerj.org/contributors/steventimes)
 
-Selected source snapshots are available in the
-[XERJ Corpus Hub](https://hub.xerj.org/corpus/steventimes--fpstreams)
-as searchable reference material for AI coding agents.
+A pinned fpstreams source snapshot is
+[listed in the XERJ Corpus Hub](https://hub.xerj.org/corpus/steventimes--fpstreams).
+The entry provides instructions for local indexing.
 
 **Python · Rust** · [Try the playground](https://steventimes.github.io/fpstreams/playground/) · [Read the docs](https://steventimes.github.io/fpstreams/) · [Install from PyPI](https://pypi.org/project/fpstreams/)
 
@@ -60,9 +60,10 @@ skill. Scans parse repository files without running the target project's code.
 
 ### [Soccer Analytics](https://github.com/steventimes/soccer-analytics)
 
-**Explore football data and compare models on held-out data.** Research covers
+**Explore football data and compare models on historical holdouts.** Research covers
 matches, teams, and players, with reproducible examples that keep training and
-evaluation periods separate.
+evaluation periods separate. These examples do not establish readiness for
+prospective prediction.
 
 **Python · Machine learning** · [Explore research results](https://github.com/steventimes/soccer-analytics/blob/main/results/README.md) · [Reproduce examples](https://github.com/steventimes/soccer-analytics/blob/main/REPRODUCING.md)
 
